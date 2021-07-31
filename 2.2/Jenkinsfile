@@ -34,7 +34,7 @@ pipeline {
     post{
         always {
              echo 'Prints whether deploy happened or not, success or failure'
-             emailext body: 'How are you doing?', subject: 'Hello', to: 'ketan@paratussystems.com'
+             emailext body: 'How are you doing?', subject: 'Hello', to: 'ketanvj@gmail.com'
         }
     }
 }
