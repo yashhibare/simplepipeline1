@@ -31,6 +31,12 @@ pipeline {
                 echo "Testing release ${RELEASE}..."
             }
         }
+        stage('Deploy to Staging') {
+            steps {
+                echo "Putting release ${RELEASE}... to staging"
+            }
+        }
+
         stage('Deploy') {
             input {
                 message 'Deploy?'
