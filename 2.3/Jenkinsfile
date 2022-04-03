@@ -37,7 +37,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy to Production') {
             input {
                 message 'Deploy?'
                 ok 'Do it!'
