@@ -6,7 +6,9 @@ pipeline {
     environment {
         RELEASE='20.04'
     }
-
+    parameters {
+        string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
+    }
     stages {
        stage('Example') {
             steps {
